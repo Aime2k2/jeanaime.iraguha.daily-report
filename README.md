@@ -1,1 +1,1 @@
-# jeanaime.iraguha.daily-report
+Daily Reports
