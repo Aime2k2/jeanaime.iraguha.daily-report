@@ -25,4 +25,7 @@
 - Push the changes to your github repository.
 ## Day five
 -list and dictionally 
-
+## Day 6
+-if statement
+-for loop
+-while loop
