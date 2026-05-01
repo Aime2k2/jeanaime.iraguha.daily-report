@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlobalBridge | B2B Marketplace Growth Platform</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <h1>GlobalBridge</h1>
+        <nav>
+          <a href="#categories">Categories</a>
+          <a href="#suppliers">Suppliers</a>
+          <a href="#rfq">RFQ</a>
+          <a href="#insights">Insights</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <p class="badge">Marketing + Commerce Engine</p>
+          <h2>Scale your B2B sourcing like top global marketplaces</h2>
+          <p>
+            Launch demand-gen campaigns, onboard verified suppliers, and convert visitors through intelligent product discovery.
+          </p>
+          <div class="hero-actions">
+            <button id="startCampaignBtn">Start Campaign</button>
+            <button class="ghost" id="viewSuppliersBtn">View Suppliers</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="section container">
+        <h3>High-Converting Categories</h3>
+        <div id="categoryGrid" class="grid"></div>
+      </section>
+
+      <section id="suppliers" class="section section-light">
+        <div class="container">
+          <h3>Featured Verified Suppliers</h3>
+          <div id="supplierGrid" class="grid"></div>
+        </div>
+      </section>
+
+      <section id="rfq" class="section container">
+        <h3>Request for Quotation (RFQ)</h3>
+        <form id="rfqForm" class="form-card">
+          <input type="text" name="company" placeholder="Company name" required />
+          <input type="email" name="email" placeholder="Work email" required />
+          <input type="text" name="product" placeholder="Product needed" required />
+          <textarea name="details" placeholder="Quantity, target price, timelines" required></textarea>
+          <button type="submit">Submit RFQ</button>
+        </form>
+        <p id="rfqStatus" class="status"></p>
+      </section>
+
+      <section id="insights" class="section section-light">
+        <div class="container">
+          <h3>Marketplace Performance</h3>
+          <div id="metrics" class="metrics"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2026 GlobalBridge. Built as a scalable B2B marketing website simulation.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+:root {
+  --primary: #ff6a00;
+  --dark: #111827;
+  --muted: #6b7280;
+  --bg: #f9fafb;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: var(--dark); background: #fff; }
+.container { width: min(1100px, 92%); margin: 0 auto; }
+.topbar { border-bottom: 1px solid #e5e7eb; background: #fff; position: sticky; top: 0; }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+nav a { margin-left: 1rem; text-decoration: none; color: var(--dark); }
+.hero { background: linear-gradient(120deg, #fff7ed, #ffedd5); padding: 5rem 0; }
+.badge { display: inline-block; background: #fff; border: 1px solid #fed7aa; padding: .35rem .75rem; border-radius: 999px; }
+.hero h2 { font-size: 2.2rem; max-width: 650px; }
+.hero p { max-width: 650px; color: var(--muted); }
+.hero-actions button { margin-right: .8rem; padding: .8rem 1.2rem; border: none; border-radius: 8px; background: var(--primary); color: #fff; cursor: pointer; }
+.hero-actions .ghost { background: transparent; border: 1px solid var(--primary); color: var(--primary); }
+.section { padding: 4rem 0; }
+.section-light { background: var(--bg); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1rem; }
+.card, .form-card, .metric-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; }
+.card span { color: var(--primary); font-weight: 600; }
+.form-card { display: grid; gap: .7rem; max-width: 600px; }
+input, textarea, button { font: inherit; }
+input, textarea { padding: .75rem; border: 1px solid #d1d5db; border-radius: 8px; }
+textarea { min-height: 110px; resize: vertical; }
+.form-card button { background: var(--primary); color: white; border: none; padding: .8rem; border-radius: 8px; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 1rem; }
+.metric-card h4 { font-size: 1.8rem; margin: 0 0 .3rem; }
+footer { border-top: 1px solid #e5e7eb; padding: 1.2rem 0; color: var(--muted); }
+.status { margin-top: .8rem; color: #065f46; }
