@@ -1,36 +1,54 @@
-# jeanaime.iraguha-daily-reports
-- This repository is for daily reports 
-- This course is Introduction to python programming 
-## Day one
-- Creating github account.
-- Short cut to use in python. such as: saving, copy, run, paste, cut, creating a new cell, deleting a cell,...
-## Day two
-- Creating variables.
-- Assigne something on that variables.
--  How to craete a string.
-## Day three
- - I did strings and files
- - Indexing strings and slicing
- - Length of a string
- - Concatenation
- -  Formatting
- - Methods like: uppercase, lower cases,...
+# GlobalBridge B2B Marketing Website (Alibaba-style Simulation)
 
-## Day four
-- All about git.
-- Create a folder.
-- Add a files in a folder.
-- Checking the status of your folder.
-- Commit changes. 
-- Push the changes to your github repository.
-## Day five
--list and dictionally 
-## Day 6
--if statement
--for loop
--while loop
-## Day nine 
-- module creation(my program)
-- packages
-- using your own packages and created function
-- 
+This project contains a cleanly separated **frontend** and **backend** to simulate a B2B marketplace marketing platform similar to Alibaba workflows:
+
+- Category-led product discovery
+- Verified supplier showcase
+- RFQ submission funnel
+- Marketplace KPI section for trust and conversion
+
+## Project Structure
+
+```text
+.
+├── frontend/
+│   ├── public/index.html
+│   ├── src/main.js
+│   └── src/styles/main.css
+└── backend/
+    ├── src/controllers/marketplaceController.js
+    ├── src/data/mockData.js
+    ├── src/middleware/notFound.js
+    ├── src/routes/marketplaceRoutes.js
+    └── src/server.js
+```
+
+## Run Locally
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Backend runs on `http://localhost:4000`.
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on `http://localhost:5173`.
+
+## API Endpoints
+
+- `GET /api/health`
+- `GET /api/categories`
+- `GET /api/suppliers`
+- `GET /api/metrics`
+- `POST /api/rfq`
